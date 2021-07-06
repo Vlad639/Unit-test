@@ -54,4 +54,11 @@ class CalculatorTest {
         assertEquals(2.6667, rez);
     }
 
+    @Test
+    void divZeroCheck() {
+        assertThrows(ArithmeticException.class, () -> {
+            Calculator.div(8, 0); }
+            );
+    }
+
 }

@@ -19,4 +19,11 @@ public class QuadraticEquationsTest {
                 new ImageRoots(new ImageNumber(-0.13, 0.22), new ImageNumber(-0.13, -0.22)),
                 a.findRoots(2));
     }
+
+    @Test
+    void OneRootCheck(){
+        QuadraticEquations a = new QuadraticEquations();
+        a.setKoefficients(1, 4, 4);
+        assertEquals(new RealRoots(-2, -2), a.findRoots(2));
+    }
 }
