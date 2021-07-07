@@ -7,7 +7,7 @@ class CalculatorTest {
     @Test
     void sumCheckDouble() {
         double rez = Calculator.sum(76.347, 23.653);
-        assertEquals(100, rez);
+        assertEquals(10, rez);
     }
 
     @Test
